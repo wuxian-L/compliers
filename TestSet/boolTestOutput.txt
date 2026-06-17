@@ -1,0 +1,45 @@
+=== 语义分析开始 ===
+(j<, a, b, -)
+(j, -, -, -)
+(jnz, c, -, -)
+(j, -, -, -)
+(jnz, d, -, -)
+(j, -, -, -)
+(+, y, z, t0)
+(=, t0, -, x)
+(=, n, -, m)
+(j, -, -, 2)
+(=, t, -, s)
+(=, v, -, u)
+
+=== 符号表 ===
+名称	类型	作用域	行号	列号
+v	IDENTIFIED	9	5	0
+u	IDENTIFIED	9	3	0
+t	IDENTIFIED	8	7	0
+m	IDENTIFIED	6	6	0
+s	IDENTIFIED	8	5	0
+z	IDENTIFIED	4	11	0
+b	IDENTIFIED	1	8	0
+d	IDENTIFIED	3	9	0
+n	IDENTIFIED	6	8	0
+x	IDENTIFIED	4	7	0
+a	IDENTIFIED	1	6	0
+c	IDENTIFIED	2	12	0
+y	IDENTIFIED	4	9	0
+
+=== 四元式 ===
+0:(j<, a, b, 2)
+1:(j, -, -, 11)
+2:(jnz, c, -, 4)
+3:(j, -, -, 11)
+4:(jnz, d, -, 6)
+5:(j, -, -, 2)
+6:(+, y, z, t0)
+7:(=, t0, -, x)
+8:(=, n, -, m)
+9:(j, -, -, 2)
+10:(=, t, -, s)
+11:(=, v, -, u)
+
+=== 语义分析完成 ===

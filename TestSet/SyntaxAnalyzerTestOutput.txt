@@ -1,0 +1,147 @@
+(1)stmts -> stmt rest0
+(2)stmt -> while ( bool ) stmt
+(3)bool -> equality
+(4)equality -> rel rest4
+(5)rel -> expr rop_expr
+(6)expr -> term rest5
+(7)term -> unary rest6
+(8)unary -> factor
+(9)factor -> loc
+(10)loc -> id resta
+(11)resta -> ε
+(12)rest6 -> ε
+(13)rest5 -> ε
+(14)rop_expr -> < expr
+(15)expr -> term rest5
+(16)term -> unary rest6
+(17)unary -> factor
+(18)factor -> num
+(19)rest6 -> ε
+(20)rest5 -> ε
+(21)rest4 -> ε
+(22)stmt -> if ( bool ) stmt else stmt
+(23)bool -> equality
+(24)equality -> rel rest4
+(25)rel -> expr rop_expr
+(26)expr -> term rest5
+(27)term -> unary rest6
+(28)unary -> factor
+(29)factor -> loc
+(30)loc -> id resta
+(31)resta -> ε
+(32)rest6 -> ε
+(33)rest5 -> ε
+(34)rop_expr -> < expr
+(35)expr -> term rest5
+(36)term -> unary rest6
+(37)unary -> factor
+(38)factor -> loc
+(39)loc -> id resta
+(40)resta -> ε
+(41)rest6 -> ε
+(42)rest5 -> ε
+(43)rest4 -> ε
+(44)stmt -> loc = expr ;
+(45)loc -> id resta
+(46)resta -> ε
+(47)expr -> term rest5
+(48)term -> unary rest6
+(49)unary -> factor
+(50)factor -> loc
+(51)loc -> id resta
+(52)resta -> ε
+(53)rest6 -> * unary rest6
+(54)unary -> factor
+(55)factor -> ( expr )
+(56)expr -> term rest5
+(57)term -> unary rest6
+(58)unary -> factor
+(59)factor -> loc
+(60)loc -> id resta
+(61)resta -> [ elist ]
+(62)elist -> expr rest1
+(63)expr -> term rest5
+(64)term -> unary rest6
+(65)unary -> factor
+(66)factor -> num
+(67)rest6 -> ε
+(68)rest5 -> ε
+(69)rest1 -> ε
+(70)rest6 -> ε
+(71)rest5 -> + term rest5
+(72)term -> unary rest6
+(73)unary -> factor
+(74)factor -> num
+(75)rest6 -> ε
+(76)rest5 -> ε
+(77)rest6 -> ε
+(78)rest5 -> ε
+(79)stmt -> loc = expr ;
+(80)loc -> id resta
+(81)resta -> [ elist ]
+(82)elist -> expr rest1
+(83)expr -> term rest5
+(84)term -> unary rest6
+(85)unary -> factor
+(86)factor -> num
+(87)rest6 -> ε
+(88)rest5 -> ε
+(89)rest1 -> ε
+(90)expr -> term rest5
+(91)term -> unary rest6
+(92)unary -> factor
+(93)factor -> loc
+(94)loc -> id resta
+(95)resta -> ε
+(96)rest6 -> * unary rest6
+(97)unary -> factor
+(98)factor -> loc
+(99)loc -> id resta
+(100)resta -> [ elist ]
+(101)elist -> expr rest1
+(102)expr -> term rest5
+(103)term -> unary rest6
+(104)unary -> factor
+(105)factor -> num
+(106)rest6 -> ε
+(107)rest5 -> ε
+(108)rest1 -> ε
+(109)rest6 -> ε
+(110)rest5 -> + term rest5
+(111)term -> unary rest6
+(112)unary -> factor
+(113)factor -> num
+(114)rest6 -> ε
+(115)rest5 -> ε
+(116)rest0 -> stmt rest0
+(117)stmt -> loc = expr ;
+(118)loc -> id resta
+(119)resta -> [ elist ]
+(120)elist -> expr rest1
+(121)expr -> term rest5
+(122)term -> unary rest6
+(123)unary -> factor
+(124)factor -> loc
+(125)loc -> id resta
+(126)resta -> ε
+(127)rest6 -> ε
+(128)rest5 -> ε
+(129)rest1 -> , expr rest1
+(130)expr -> term rest5
+(131)term -> unary rest6
+(132)unary -> factor
+(133)factor -> loc
+(134)loc -> id resta
+(135)resta -> ε
+(136)rest6 -> ε
+(137)rest5 -> ε
+(138)rest1 -> ε
+(139)expr -> term rest5
+(140)term -> unary rest6
+(141)unary -> factor
+(142)factor -> loc
+(143)loc -> id resta
+(144)resta -> ε
+(145)rest6 -> ε
+(146)rest5 -> ε
+(147)rest0 -> ε
